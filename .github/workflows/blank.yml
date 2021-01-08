@@ -18,5 +18,4 @@ jobs:
                   username: zilch_github
                   password: ${{ secrets.FTP_Password }}
                   protocol: ftps
-                  local-dir: /
                   security: strict
