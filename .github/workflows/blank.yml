@@ -1,0 +1,22 @@
+name: Deploy to FTP Server
+
+on:
+    push:
+        branches: [master]
+jobs:
+    deploy:
+        name: NPM build
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout Repo
+              uses: actions/checkout@v2
+
+            - name: Deploy to FTP Server
+              uses: SamKirkland/FTP-Deploy-Action@4.0.0
+              with:
+                  server: ha01s018.org-dns.com
+                  username: zilch_github
+                  password: ${{ secrets.FTP_Password }}
+                  protocol: ftps
+                  local-dir: /
+                  security: strict
