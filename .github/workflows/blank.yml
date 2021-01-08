@@ -5,7 +5,7 @@ on:
         branches: [master]
 jobs:
     deploy:
-        name: NPM build
+        name: FTP Deploy
         runs-on: ubuntu-latest
         steps:
             - name: Checkout Repo
