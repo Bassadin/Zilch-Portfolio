@@ -4,6 +4,8 @@
 
 A Lovecraftian Cyberpunk Metroidvania Game
 
+MAde during a student project in 2020/2021 at the HFU Furtwangen University.
+
 https://bassadin.github.io/Zilch-Portfolio/
 
 https://zilch.bassadin.de/
